@@ -1,0 +1,15 @@
+<div style="display: flex; flex-direction: row;">
+    <div>
+      <ul>
+        <app-list-item 
+        *ngFor="let item of my_array"
+        [value]="item.value"
+        ></app-list-item>
+      </ul>
+    </div>
+  
+    <div style="margin: 16px 16px;">
+      <button type="button" (click)="addItem()">Add Item</button>
+      <button type="button" (click)="removeItem()" style="margin: 0 8px;">Remove Item</button>
+    </div>
+  </div>
